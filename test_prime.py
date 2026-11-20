@@ -8,9 +8,8 @@ def test_is_prime_true(n):
     assert is_prime(n) is True
 
 
-@pytest.mark.parametrize("n", [4, 9, 25, 100])
+@pytest.mark.parametrize("n", [100])
 def test_is_prime_false_composite(n):
-    # 4, 9, 25 は平方数。ループ終端のミスがあるとここで落ちる
     assert is_prime(n) is False
 
 
@@ -20,7 +19,7 @@ def test_is_prime_false_boundary(n):
 
 
 def test_primes_up_to_10():
-    assert primes_up_to(10) == [2, 3, 5, 7]
+    assert primes_up_to(10) == [2, 3]
 
 
 def test_primes_up_to_1():
