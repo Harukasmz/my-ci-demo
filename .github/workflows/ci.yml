@@ -1,7 +1,10 @@
 name: CI
 
-# pushとプルリクエストのときに実行する
-on: [push, pull_request]
+# mainへのpushとプルリクエストのときに実行する
+on:
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
   test:
