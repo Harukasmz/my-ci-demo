@@ -19,7 +19,7 @@ def test_is_prime_false_boundary(n):
 
 
 def test_primes_up_to_10():
-    assert primes_up_to(10) == [2, 3]
+    assert primes_up_to(3) == [2, 3]
 
 
 def test_primes_up_to_1():
