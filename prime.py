@@ -20,3 +20,4 @@ def is_prime(n: int) -> bool:
 def primes_up_to(n: int) -> list[int]:
     """n 以下の素数をリストで返す。"""
     return [k for k in range(2, n + 1) if is_prime(k)]
+
